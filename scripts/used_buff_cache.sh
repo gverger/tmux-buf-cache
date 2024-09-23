@@ -4,9 +4,9 @@ high_usage ()
 {
     cache=$(free --giga | grep Mem | awk '{ print $6 }')
     if [[ $cache -ge 5 ]]; then
-        printf "#[bg=black,fg=red]"
+        printf "#[fg=red]"
     else
-        printf "#[bg=black,fg=green]"
+        printf "#[fg=green]"
     fi
 }
 
